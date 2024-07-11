@@ -232,7 +232,7 @@ int main(int argc, char *argv[])
             if (duration >= 5) {
                 close(g_events[checkpos].fd);
                 printf("[fd=%d] timeout\n", g_events[checkpos].fd);
-                eventdel(g_efd, &g_events[checkpos]);~
+                eventdel(g_efd, &g_events[checkpos]);
             }
         }
         /* 等待事件发生 */
